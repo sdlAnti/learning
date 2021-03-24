@@ -1,0 +1,48 @@
+docker --version    Verify that docker CLI is installed.
+ibmcloud --version  Verify that ibmcloud CLI is installed.
+
+git clone https://gitlab.com/ibm/skills-network/courses/cc201.git   
+    app.js is the main application, which simply replies with a hello world message.
+    package.json defines the dependencies of the application.
+    Dockerfile defines the instructions Docker uses to build the image.
+
+
+
+# Docker correct installation test segment 
+docker images
+docker pull hello-world
+docker images
+docker run hello-world
+
+
+docker ps -a    List the containers to see that your container ran and exited successfully.
+docker container rm <container_id>  
+docker build . -t myimage:v1    crate node.js app container tagged myimage:v1 using dockerfile from cc201.git   
+docker images
+docker run -p 8080:8080 myimage:v1  The output should indicate that your application is listening on port 8080. 
+docker ps -q    show all running containers short view id only
+docker stop $(docker ps -q) using docker stop <id> $(docker ps -q) get id running container
+
+Среда должна уже зарегистрировать вас в учетной записи IBM Cloud, которая была автоматически сгенерирована для вас средой Skills Network Labs. Следующая команда предоставит вам информацию о целевой учетной записи:
+ibmcloud target
+Среда также создала для вас пространство имен IBM Cloud Container Registry (ICR). Поскольку реестр контейнеров является мультитенантным, пространства имен используются для разделения реестра между несколькими пользователями. Используйте следующую команду, чтобы увидеть пространства имен, к которым у вас есть доступ:
+ibmcloud cr namespaces
+Вы должны увидеть два пространства имен:
+
+sn-labs-<username>: Это пространство имен только для вас. У вас есть полный доступ для чтения и записи к этому пространству имен.
+sn-labsassets: Это общее пространство имен, к которому у вас есть доступ только для чтения .
+Убедитесь, что вы нацеливаетесь на us-southрегион, где находятся эти пространства имен, как вы видели в выходных данных ibmcloud targetкоманды.
+ibmcloud cr region-set us-south
+Зарегистрируйте своего локального демона Docker в реестре IBM Cloud Container, чтобы вы могли отправлять и извлекать данные из реестра.
+ibmcloud cr login
+Экспортируйте свое пространство имен как переменную среды, чтобы его можно было использовать в последующих командах. Обязательно подставьте свое пространство имен после знака равенства. Если вы не помните свое пространство имен, запустите его ibmcloud cr namespacesснова или просто найдите его в своем терминале.
+export MY_NAMESPACE=sn-labs-$USERNAME
+Пометьте свой образ, чтобы его можно было отправить в IBM Cloud Container Registry.
+docker tag myimage:v1 us.icr.io/$MY_NAMESPACE/hello-world:1
+Отправьте только что помеченный образ в IBM Cloud Container Registry.
+docker push us.icr.io/$MY_NAMESPACE/hello-world:1
+Убедитесь, что изображение было успешно отправлено, указав изображения в реестре контейнеров.
+ibmcloud cr images
+Необязательно, чтобы просматривать изображения только в определенном пространстве имен.
+
+ibmcloud cr images --restrict $MY_NAMESPACE
