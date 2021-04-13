@@ -24,9 +24,11 @@ git branch -D <name>	Forcibly deletes the branch
 git checkout <branch> 	Switches to a branch.
 git checkout -b <branch>	Creates a new branch and switches to it.
 git checkout commit_hash	move HEAD of repo to some commit
+git checkout commit_hash -- file1/to/restore file2/to/restore		restore files from some commit
 git merge <branch> 	Merge joins branches together. 
 git merge --abort	If there are merge conflicts (meaning files are incompatible), --abort can be used to abort the merge action.
 git log --graph --oneline	This shows a summarized view of the commit history for a repo.
+
 
 git clone URL	Git clone is used to clone a remote repository into a local workspace
 git push	Git push is used to push commits from your local repo to a remote repo
