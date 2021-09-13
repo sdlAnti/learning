@@ -1,0 +1,19 @@
+https://kubernetes.io/ru/docs/reference/kubectl/cheatsheet/
+kubectl apply -f KUBER_CONFIG_FILE - Установка желаемого состояния для контейнера используя KUBER_CONFIG_FILE 
+kubectl get deployments --namespace kube-stystem 
+kubectl describe deployment kube-dns-amd64 --namespace kube-system
+kubectl config get-clusters - получение информации о кластере
+kubectl config get-contexts - получение текущего контекста кластера (пространство имен, пользователь, кластер, параметры доступа)
+kubectl get pods - получение POD в своем пространстве имен
+kubectl get pods -o wide - Широкий формат вывода информации о POD
+kubectl get services - получение сервисов в своем пространстве имен
+kubectl get deployments - получение "групп POD" возможно название неверное
+kubectl describe pod POD_NAME - Полная информация о POD POD_NAME 
+kubectl delete pod POD_NAME - Удаление POD POD_NAME
+kubectl create -f KUBER_CONFIG_FILE - Создание POD используя KUBER_CONFIG_FILE
+kubectl expose deployment/hello-world - Cоздание IP адреса доступного в кластере для hello-wold PODs
+kubectl get replicasets - получение статуса и количества реполик replicaset
+kubectl get rs - получение статуса и количества реполик replicaset
+kubectl autoscale deploy hello-kuberbetes --min=2 --max=5 --cpu-percent=10 - горизонтальное масштабирование пода hello-kuberbetes от 2 до 5 при нагрузке более 10 % на процессор
+kubectl get hpa - получение статуса (Horizontal Pod Autoscaler) автомасштабирование развертывания.
+kubectl scale deployment hello-world --replicas=3 - Промасштабировать набор реплик (replicaset) 'hello-world' до 3
