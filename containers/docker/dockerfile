@@ -1,0 +1,6 @@
+FROM ubuntu
+RUN apt update && apt upgrade -y
+RUN apt install python3 cron -y
+RUN /etc/init.d/cron start
+RUN echo "#testmessage q" >> /etc/crontab
+
