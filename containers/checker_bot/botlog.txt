@@ -1,0 +1,20 @@
+Error while getting Updates: Bad Gateway
+No error handlers are registered, logging exception.
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/site-packages/telegram/ext/updater.py", line 646, in _network_loop_retry
+    if not action_cb():
+  File "/usr/local/lib/python3.6/site-packages/telegram/ext/updater.py", line 601, in polling_action_cb
+    allowed_updates=allowed_updates,
+  File "/usr/local/lib/python3.6/site-packages/telegram/ext/extbot.py", line 228, in get_updates
+    api_kwargs=api_kwargs,
+  File "/usr/local/lib/python3.6/site-packages/telegram/bot.py", line 130, in decorator
+    result = func(*args, **kwargs)
+  File "/usr/local/lib/python3.6/site-packages/telegram/bot.py", line 2865, in get_updates
+    api_kwargs=api_kwargs,
+  File "/usr/local/lib/python3.6/site-packages/telegram/bot.py", line 296, in _post
+    f'{self.base_url}/{endpoint}', data=data, timeout=effective_timeout
+  File "/usr/local/lib/python3.6/site-packages/telegram/utils/request.py", line 361, in post
+    **urlopen_kwargs,
+  File "/usr/local/lib/python3.6/site-packages/telegram/utils/request.py", line 290, in _request_wrapper
+    raise NetworkError('Bad Gateway')
+telegram.error.NetworkError: Bad Gateway

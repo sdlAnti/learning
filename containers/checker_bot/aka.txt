@@ -1,0 +1,760 @@
+Error while getting Updates: Bad Gateway
+No error handlers are registered, logging exception.
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/site-packages/telegram/ext/updater.py", line 646, in _network_loop_retry
+    if not action_cb():
+  File "/usr/local/lib/python3.6/site-packages/telegram/ext/updater.py", line 601, in polling_action_cb
+    allowed_updates=allowed_updates,
+  File "/usr/local/lib/python3.6/site-packages/telegram/ext/extbot.py", line 228, in get_updates
+    api_kwargs=api_kwargs,
+  File "/usr/local/lib/python3.6/site-packages/telegram/bot.py", line 130, in decorator
+    result = func(*args, **kwargs)
+  File "/usr/local/lib/python3.6/site-packages/telegram/bot.py", line 2865, in get_updates
+    api_kwargs=api_kwargs,
+  File "/usr/local/lib/python3.6/site-packages/telegram/bot.py", line 296, in _post
+    f'{self.base_url}/{endpoint}', data=data, timeout=effective_timeout
+  File "/usr/local/lib/python3.6/site-packages/telegram/utils/request.py", line 361, in post
+    **urlopen_kwargs,
+  File "/usr/local/lib/python3.6/site-packages/telegram/utils/request.py", line 290, in _request_wrapper
+    raise NetworkError('Bad Gateway')
+telegram.error.NetworkError: Bad Gateway
+No error handlers are registered, logging exception.
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/site-packages/telegram/ext/dispatcher.py", line 555, in process_update
+    handler.handle_update(update, self, check, context)
+  File "/usr/local/lib/python3.6/site-packages/telegram/ext/handler.py", line 198, in handle_update
+    return self.callback(update, context)
+  File "akatanbot.py", line 48, in deldomen
+    sites.remove(tmp)
+ValueError: list.remove(x): x not in list
+No error handlers are registered, logging exception.
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/site-packages/telegram/ext/dispatcher.py", line 555, in process_update
+    handler.handle_update(update, self, check, context)
+  File "/usr/local/lib/python3.6/site-packages/telegram/ext/handler.py", line 198, in handle_update
+    return self.callback(update, context)
+  File "akatanbot.py", line 48, in deldomen
+    sites.remove(tmp)
+ValueError: list.remove(x): x not in list
+No error handlers are registered, logging exception.
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/site-packages/telegram/ext/dispatcher.py", line 555, in process_update
+    handler.handle_update(update, self, check, context)
+  File "/usr/local/lib/python3.6/site-packages/telegram/ext/handler.py", line 198, in handle_update
+    return self.callback(update, context)
+  File "akatanbot.py", line 48, in deldomen
+    sites.remove(tmp)
+ValueError: list.remove(x): x not in list
+Error while getting Updates: Bad Gateway
+No error handlers are registered, logging exception.
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/site-packages/telegram/ext/updater.py", line 646, in _network_loop_retry
+    if not action_cb():
+  File "/usr/local/lib/python3.6/site-packages/telegram/ext/updater.py", line 601, in polling_action_cb
+    allowed_updates=allowed_updates,
+  File "/usr/local/lib/python3.6/site-packages/telegram/ext/extbot.py", line 228, in get_updates
+    api_kwargs=api_kwargs,
+  File "/usr/local/lib/python3.6/site-packages/telegram/bot.py", line 130, in decorator
+    result = func(*args, **kwargs)
+  File "/usr/local/lib/python3.6/site-packages/telegram/bot.py", line 2865, in get_updates
+    api_kwargs=api_kwargs,
+  File "/usr/local/lib/python3.6/site-packages/telegram/bot.py", line 296, in _post
+    f'{self.base_url}/{endpoint}', data=data, timeout=effective_timeout
+  File "/usr/local/lib/python3.6/site-packages/telegram/utils/request.py", line 361, in post
+    **urlopen_kwargs,
+  File "/usr/local/lib/python3.6/site-packages/telegram/utils/request.py", line 290, in _request_wrapper
+    raise NetworkError('Bad Gateway')
+telegram.error.NetworkError: Bad Gateway
+Error while getting Updates: Bad Gateway
+No error handlers are registered, logging exception.
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/site-packages/telegram/ext/updater.py", line 646, in _network_loop_retry
+    if not action_cb():
+  File "/usr/local/lib/python3.6/site-packages/telegram/ext/updater.py", line 601, in polling_action_cb
+    allowed_updates=allowed_updates,
+  File "/usr/local/lib/python3.6/site-packages/telegram/ext/extbot.py", line 228, in get_updates
+    api_kwargs=api_kwargs,
+  File "/usr/local/lib/python3.6/site-packages/telegram/bot.py", line 130, in decorator
+    result = func(*args, **kwargs)
+  File "/usr/local/lib/python3.6/site-packages/telegram/bot.py", line 2865, in get_updates
+    api_kwargs=api_kwargs,
+  File "/usr/local/lib/python3.6/site-packages/telegram/bot.py", line 296, in _post
+    f'{self.base_url}/{endpoint}', data=data, timeout=effective_timeout
+  File "/usr/local/lib/python3.6/site-packages/telegram/utils/request.py", line 361, in post
+    **urlopen_kwargs,
+  File "/usr/local/lib/python3.6/site-packages/telegram/utils/request.py", line 290, in _request_wrapper
+    raise NetworkError('Bad Gateway')
+telegram.error.NetworkError: Bad Gateway
+No error handlers are registered, logging exception.
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/site-packages/telegram/ext/dispatcher.py", line 555, in process_update
+    handler.handle_update(update, self, check, context)
+  File "/usr/local/lib/python3.6/site-packages/telegram/ext/handler.py", line 198, in handle_update
+    return self.callback(update, context)
+  File "akatanbot.py", line 48, in deldomen
+    sites.remove(tmp)
+ValueError: list.remove(x): x not in list
+No error handlers are registered, logging exception.
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/site-packages/telegram/ext/dispatcher.py", line 555, in process_update
+    handler.handle_update(update, self, check, context)
+  File "/usr/local/lib/python3.6/site-packages/telegram/ext/handler.py", line 198, in handle_update
+    return self.callback(update, context)
+  File "akatanbot.py", line 48, in deldomen
+    sites.remove(tmp)
+ValueError: list.remove(x): x not in list
+No error handlers are registered, logging exception.
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/site-packages/telegram/ext/dispatcher.py", line 555, in process_update
+    handler.handle_update(update, self, check, context)
+  File "/usr/local/lib/python3.6/site-packages/telegram/ext/handler.py", line 198, in handle_update
+    return self.callback(update, context)
+  File "akatanbot.py", line 48, in deldomen
+    sites.remove(tmp)
+ValueError: list.remove(x): x not in list
+No error handlers are registered, logging exception.
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/site-packages/telegram/ext/dispatcher.py", line 555, in process_update
+    handler.handle_update(update, self, check, context)
+  File "/usr/local/lib/python3.6/site-packages/telegram/ext/handler.py", line 198, in handle_update
+    return self.callback(update, context)
+  File "akatanbot.py", line 48, in deldomen
+    sites.remove(tmp)
+ValueError: list.remove(x): x not in list
+Error while getting Updates: Bad Gateway
+No error handlers are registered, logging exception.
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/site-packages/telegram/ext/updater.py", line 646, in _network_loop_retry
+    if not action_cb():
+  File "/usr/local/lib/python3.6/site-packages/telegram/ext/updater.py", line 601, in polling_action_cb
+    allowed_updates=allowed_updates,
+  File "/usr/local/lib/python3.6/site-packages/telegram/ext/extbot.py", line 228, in get_updates
+    api_kwargs=api_kwargs,
+  File "/usr/local/lib/python3.6/site-packages/telegram/bot.py", line 130, in decorator
+    result = func(*args, **kwargs)
+  File "/usr/local/lib/python3.6/site-packages/telegram/bot.py", line 2865, in get_updates
+    api_kwargs=api_kwargs,
+  File "/usr/local/lib/python3.6/site-packages/telegram/bot.py", line 296, in _post
+    f'{self.base_url}/{endpoint}', data=data, timeout=effective_timeout
+  File "/usr/local/lib/python3.6/site-packages/telegram/utils/request.py", line 361, in post
+    **urlopen_kwargs,
+  File "/usr/local/lib/python3.6/site-packages/telegram/utils/request.py", line 290, in _request_wrapper
+    raise NetworkError('Bad Gateway')
+telegram.error.NetworkError: Bad Gateway
+Error while getting Updates: urllib3 HTTPError HTTPSConnectionPool(host='api.telegram.org', port=443): Max retries exceeded with url: /bot1816214329:AAHdIJfX_fx16svAh76C5ZCKE6BKIfH-WNw/getUpdates (Caused by NewConnectionError('<telegram.vendor.ptb_urllib3.urllib3.connection.VerifiedHTTPSConnection object at 0x7fc814146978>: Failed to establish a new connection: [Errno -2] Name or service not known',))
+No error handlers are registered, logging exception.
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/site-packages/telegram/vendor/ptb_urllib3/urllib3/connection.py", line 141, in _new_conn
+    (self.host, self.port), self.timeout, **extra_kw)
+  File "/usr/local/lib/python3.6/site-packages/telegram/vendor/ptb_urllib3/urllib3/util/connection.py", line 60, in create_connection
+    for res in socket.getaddrinfo(host, port, family, socket.SOCK_STREAM):
+  File "/usr/lib64/python3.6/socket.py", line 745, in getaddrinfo
+    for res in _socket.getaddrinfo(host, port, family, type, proto, flags):
+socket.gaierror: [Errno -2] Name or service not known
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/site-packages/telegram/vendor/ptb_urllib3/urllib3/connectionpool.py", line 617, in urlopen
+    chunked=chunked)
+  File "/usr/local/lib/python3.6/site-packages/telegram/vendor/ptb_urllib3/urllib3/connectionpool.py", line 360, in _make_request
+    self._validate_conn(conn)
+  File "/usr/local/lib/python3.6/site-packages/telegram/vendor/ptb_urllib3/urllib3/connectionpool.py", line 857, in _validate_conn
+    super(HTTPSConnectionPool, self)._validate_conn(conn)
+  File "/usr/local/lib/python3.6/site-packages/telegram/vendor/ptb_urllib3/urllib3/connectionpool.py", line 289, in _validate_conn
+    conn.connect()
+  File "/usr/local/lib/python3.6/site-packages/telegram/vendor/ptb_urllib3/urllib3/connection.py", line 284, in connect
+    conn = self._new_conn()
+  File "/usr/local/lib/python3.6/site-packages/telegram/vendor/ptb_urllib3/urllib3/connection.py", line 150, in _new_conn
+    self, "Failed to establish a new connection: %s" % e)
+telegram.vendor.ptb_urllib3.urllib3.exceptions.NewConnectionError: <telegram.vendor.ptb_urllib3.urllib3.connection.VerifiedHTTPSConnection object at 0x7fc814146978>: Failed to establish a new connection: [Errno -2] Name or service not known
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/site-packages/telegram/utils/request.py", line 259, in _request_wrapper
+    resp = self._con_pool.request(*args, **kwargs)
+  File "/usr/local/lib/python3.6/site-packages/telegram/vendor/ptb_urllib3/urllib3/request.py", line 70, in request
+    **urlopen_kw)
+  File "/usr/local/lib/python3.6/site-packages/telegram/vendor/ptb_urllib3/urllib3/request.py", line 148, in request_encode_body
+    return self.urlopen(method, url, **extra_kw)
+  File "/usr/local/lib/python3.6/site-packages/telegram/vendor/ptb_urllib3/urllib3/poolmanager.py", line 244, in urlopen
+    response = conn.urlopen(method, u.request_uri, **kw)
+  File "/usr/local/lib/python3.6/site-packages/telegram/vendor/ptb_urllib3/urllib3/connectionpool.py", line 695, in urlopen
+    **response_kw)
+  File "/usr/local/lib/python3.6/site-packages/telegram/vendor/ptb_urllib3/urllib3/connectionpool.py", line 695, in urlopen
+    **response_kw)
+  File "/usr/local/lib/python3.6/site-packages/telegram/vendor/ptb_urllib3/urllib3/connectionpool.py", line 695, in urlopen
+    **response_kw)
+  File "/usr/local/lib/python3.6/site-packages/telegram/vendor/ptb_urllib3/urllib3/connectionpool.py", line 666, in urlopen
+    _stacktrace=sys.exc_info()[2])
+  File "/usr/local/lib/python3.6/site-packages/telegram/vendor/ptb_urllib3/urllib3/util/retry.py", line 376, in increment
+    raise MaxRetryError(_pool, url, error or ResponseError(cause))
+telegram.vendor.ptb_urllib3.urllib3.exceptions.MaxRetryError: HTTPSConnectionPool(host='api.telegram.org', port=443): Max retries exceeded with url: /bot1816214329:AAHdIJfX_fx16svAh76C5ZCKE6BKIfH-WNw/getUpdates (Caused by NewConnectionError('<telegram.vendor.ptb_urllib3.urllib3.connection.VerifiedHTTPSConnection object at 0x7fc814146978>: Failed to establish a new connection: [Errno -2] Name or service not known',))
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/site-packages/telegram/ext/updater.py", line 646, in _network_loop_retry
+    if not action_cb():
+  File "/usr/local/lib/python3.6/site-packages/telegram/ext/updater.py", line 601, in polling_action_cb
+    allowed_updates=allowed_updates,
+  File "/usr/local/lib/python3.6/site-packages/telegram/ext/extbot.py", line 228, in get_updates
+    api_kwargs=api_kwargs,
+  File "/usr/local/lib/python3.6/site-packages/telegram/bot.py", line 130, in decorator
+    result = func(*args, **kwargs)
+  File "/usr/local/lib/python3.6/site-packages/telegram/bot.py", line 2865, in get_updates
+    api_kwargs=api_kwargs,
+  File "/usr/local/lib/python3.6/site-packages/telegram/bot.py", line 296, in _post
+    f'{self.base_url}/{endpoint}', data=data, timeout=effective_timeout
+  File "/usr/local/lib/python3.6/site-packages/telegram/utils/request.py", line 361, in post
+    **urlopen_kwargs,
+  File "/usr/local/lib/python3.6/site-packages/telegram/utils/request.py", line 265, in _request_wrapper
+    raise NetworkError(f'urllib3 HTTPError {error}') from error
+telegram.error.NetworkError: urllib3 HTTPError HTTPSConnectionPool(host='api.telegram.org', port=443): Max retries exceeded with url: /bot1816214329:AAHdIJfX_fx16svAh76C5ZCKE6BKIfH-WNw/getUpdates (Caused by NewConnectionError('<telegram.vendor.ptb_urllib3.urllib3.connection.VerifiedHTTPSConnection object at 0x7fc814146978>: Failed to establish a new connection: [Errno -2] Name or service not known',))
+Error while getting Updates: Bad Gateway
+No error handlers are registered, logging exception.
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/site-packages/telegram/ext/updater.py", line 646, in _network_loop_retry
+    if not action_cb():
+  File "/usr/local/lib/python3.6/site-packages/telegram/ext/updater.py", line 601, in polling_action_cb
+    allowed_updates=allowed_updates,
+  File "/usr/local/lib/python3.6/site-packages/telegram/ext/extbot.py", line 228, in get_updates
+    api_kwargs=api_kwargs,
+  File "/usr/local/lib/python3.6/site-packages/telegram/bot.py", line 130, in decorator
+    result = func(*args, **kwargs)
+  File "/usr/local/lib/python3.6/site-packages/telegram/bot.py", line 2865, in get_updates
+    api_kwargs=api_kwargs,
+  File "/usr/local/lib/python3.6/site-packages/telegram/bot.py", line 296, in _post
+    f'{self.base_url}/{endpoint}', data=data, timeout=effective_timeout
+  File "/usr/local/lib/python3.6/site-packages/telegram/utils/request.py", line 361, in post
+    **urlopen_kwargs,
+  File "/usr/local/lib/python3.6/site-packages/telegram/utils/request.py", line 290, in _request_wrapper
+    raise NetworkError('Bad Gateway')
+telegram.error.NetworkError: Bad Gateway
+Error while getting Updates: Conflict: terminated by other getUpdates request; make sure that only one bot instance is running
+No error handlers are registered, logging exception.
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/site-packages/telegram/ext/updater.py", line 646, in _network_loop_retry
+    if not action_cb():
+  File "/usr/local/lib/python3.6/site-packages/telegram/ext/updater.py", line 601, in polling_action_cb
+    allowed_updates=allowed_updates,
+  File "/usr/local/lib/python3.6/site-packages/telegram/ext/extbot.py", line 228, in get_updates
+    api_kwargs=api_kwargs,
+  File "/usr/local/lib/python3.6/site-packages/telegram/bot.py", line 130, in decorator
+    result = func(*args, **kwargs)
+  File "/usr/local/lib/python3.6/site-packages/telegram/bot.py", line 2865, in get_updates
+    api_kwargs=api_kwargs,
+  File "/usr/local/lib/python3.6/site-packages/telegram/bot.py", line 296, in _post
+    f'{self.base_url}/{endpoint}', data=data, timeout=effective_timeout
+  File "/usr/local/lib/python3.6/site-packages/telegram/utils/request.py", line 361, in post
+    **urlopen_kwargs,
+  File "/usr/local/lib/python3.6/site-packages/telegram/utils/request.py", line 283, in _request_wrapper
+    raise Conflict(message)
+telegram.error.Conflict: Conflict: terminated by other getUpdates request; make sure that only one bot instance is running
+Error while getting Updates: urllib3 HTTPError HTTPSConnectionPool(host='api.telegram.org', port=443): Max retries exceeded with url: /bot1816214329:AAHdIJfX_fx16svAh76C5ZCKE6BKIfH-WNw/getUpdates (Caused by NewConnectionError('<telegram.vendor.ptb_urllib3.urllib3.connection.VerifiedHTTPSConnection object at 0x7fc8140e5908>: Failed to establish a new connection: [Errno 101] Network is unreachable',))
+No error handlers are registered, logging exception.
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/site-packages/telegram/vendor/ptb_urllib3/urllib3/connection.py", line 141, in _new_conn
+    (self.host, self.port), self.timeout, **extra_kw)
+  File "/usr/local/lib/python3.6/site-packages/telegram/vendor/ptb_urllib3/urllib3/util/connection.py", line 83, in create_connection
+    raise err
+  File "/usr/local/lib/python3.6/site-packages/telegram/vendor/ptb_urllib3/urllib3/util/connection.py", line 73, in create_connection
+    sock.connect(sa)
+OSError: [Errno 101] Network is unreachable
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/site-packages/telegram/vendor/ptb_urllib3/urllib3/connectionpool.py", line 617, in urlopen
+    chunked=chunked)
+  File "/usr/local/lib/python3.6/site-packages/telegram/vendor/ptb_urllib3/urllib3/connectionpool.py", line 360, in _make_request
+    self._validate_conn(conn)
+  File "/usr/local/lib/python3.6/site-packages/telegram/vendor/ptb_urllib3/urllib3/connectionpool.py", line 857, in _validate_conn
+    super(HTTPSConnectionPool, self)._validate_conn(conn)
+  File "/usr/local/lib/python3.6/site-packages/telegram/vendor/ptb_urllib3/urllib3/connectionpool.py", line 289, in _validate_conn
+    conn.connect()
+  File "/usr/local/lib/python3.6/site-packages/telegram/vendor/ptb_urllib3/urllib3/connection.py", line 284, in connect
+    conn = self._new_conn()
+  File "/usr/local/lib/python3.6/site-packages/telegram/vendor/ptb_urllib3/urllib3/connection.py", line 150, in _new_conn
+    self, "Failed to establish a new connection: %s" % e)
+telegram.vendor.ptb_urllib3.urllib3.exceptions.NewConnectionError: <telegram.vendor.ptb_urllib3.urllib3.connection.VerifiedHTTPSConnection object at 0x7fc8140e5908>: Failed to establish a new connection: [Errno 101] Network is unreachable
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/site-packages/telegram/utils/request.py", line 259, in _request_wrapper
+    resp = self._con_pool.request(*args, **kwargs)
+  File "/usr/local/lib/python3.6/site-packages/telegram/vendor/ptb_urllib3/urllib3/request.py", line 70, in request
+    **urlopen_kw)
+  File "/usr/local/lib/python3.6/site-packages/telegram/vendor/ptb_urllib3/urllib3/request.py", line 148, in request_encode_body
+    return self.urlopen(method, url, **extra_kw)
+  File "/usr/local/lib/python3.6/site-packages/telegram/vendor/ptb_urllib3/urllib3/poolmanager.py", line 244, in urlopen
+    response = conn.urlopen(method, u.request_uri, **kw)
+  File "/usr/local/lib/python3.6/site-packages/telegram/vendor/ptb_urllib3/urllib3/connectionpool.py", line 695, in urlopen
+    **response_kw)
+  File "/usr/local/lib/python3.6/site-packages/telegram/vendor/ptb_urllib3/urllib3/connectionpool.py", line 695, in urlopen
+    **response_kw)
+  File "/usr/local/lib/python3.6/site-packages/telegram/vendor/ptb_urllib3/urllib3/connectionpool.py", line 695, in urlopen
+    **response_kw)
+  File "/usr/local/lib/python3.6/site-packages/telegram/vendor/ptb_urllib3/urllib3/connectionpool.py", line 666, in urlopen
+    _stacktrace=sys.exc_info()[2])
+  File "/usr/local/lib/python3.6/site-packages/telegram/vendor/ptb_urllib3/urllib3/util/retry.py", line 376, in increment
+    raise MaxRetryError(_pool, url, error or ResponseError(cause))
+telegram.vendor.ptb_urllib3.urllib3.exceptions.MaxRetryError: HTTPSConnectionPool(host='api.telegram.org', port=443): Max retries exceeded with url: /bot1816214329:AAHdIJfX_fx16svAh76C5ZCKE6BKIfH-WNw/getUpdates (Caused by NewConnectionError('<telegram.vendor.ptb_urllib3.urllib3.connection.VerifiedHTTPSConnection object at 0x7fc8140e5908>: Failed to establish a new connection: [Errno 101] Network is unreachable',))
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/site-packages/telegram/ext/updater.py", line 646, in _network_loop_retry
+    if not action_cb():
+  File "/usr/local/lib/python3.6/site-packages/telegram/ext/updater.py", line 601, in polling_action_cb
+    allowed_updates=allowed_updates,
+  File "/usr/local/lib/python3.6/site-packages/telegram/ext/extbot.py", line 228, in get_updates
+    api_kwargs=api_kwargs,
+  File "/usr/local/lib/python3.6/site-packages/telegram/bot.py", line 130, in decorator
+    result = func(*args, **kwargs)
+  File "/usr/local/lib/python3.6/site-packages/telegram/bot.py", line 2865, in get_updates
+    api_kwargs=api_kwargs,
+  File "/usr/local/lib/python3.6/site-packages/telegram/bot.py", line 296, in _post
+    f'{self.base_url}/{endpoint}', data=data, timeout=effective_timeout
+  File "/usr/local/lib/python3.6/site-packages/telegram/utils/request.py", line 361, in post
+    **urlopen_kwargs,
+  File "/usr/local/lib/python3.6/site-packages/telegram/utils/request.py", line 265, in _request_wrapper
+    raise NetworkError(f'urllib3 HTTPError {error}') from error
+telegram.error.NetworkError: urllib3 HTTPError HTTPSConnectionPool(host='api.telegram.org', port=443): Max retries exceeded with url: /bot1816214329:AAHdIJfX_fx16svAh76C5ZCKE6BKIfH-WNw/getUpdates (Caused by NewConnectionError('<telegram.vendor.ptb_urllib3.urllib3.connection.VerifiedHTTPSConnection object at 0x7fc8140e5908>: Failed to establish a new connection: [Errno 101] Network is unreachable',))
+Error while getting Updates: urllib3 HTTPError HTTPSConnectionPool(host='api.telegram.org', port=443): Max retries exceeded with url: /bot1816214329:AAHdIJfX_fx16svAh76C5ZCKE6BKIfH-WNw/getUpdates (Caused by NewConnectionError('<telegram.vendor.ptb_urllib3.urllib3.connection.VerifiedHTTPSConnection object at 0x7fc8140e5828>: Failed to establish a new connection: [Errno 101] Network is unreachable',))
+No error handlers are registered, logging exception.
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/site-packages/telegram/vendor/ptb_urllib3/urllib3/connection.py", line 141, in _new_conn
+    (self.host, self.port), self.timeout, **extra_kw)
+  File "/usr/local/lib/python3.6/site-packages/telegram/vendor/ptb_urllib3/urllib3/util/connection.py", line 83, in create_connection
+    raise err
+  File "/usr/local/lib/python3.6/site-packages/telegram/vendor/ptb_urllib3/urllib3/util/connection.py", line 73, in create_connection
+    sock.connect(sa)
+OSError: [Errno 101] Network is unreachable
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/site-packages/telegram/vendor/ptb_urllib3/urllib3/connectionpool.py", line 617, in urlopen
+    chunked=chunked)
+  File "/usr/local/lib/python3.6/site-packages/telegram/vendor/ptb_urllib3/urllib3/connectionpool.py", line 360, in _make_request
+    self._validate_conn(conn)
+  File "/usr/local/lib/python3.6/site-packages/telegram/vendor/ptb_urllib3/urllib3/connectionpool.py", line 857, in _validate_conn
+    super(HTTPSConnectionPool, self)._validate_conn(conn)
+  File "/usr/local/lib/python3.6/site-packages/telegram/vendor/ptb_urllib3/urllib3/connectionpool.py", line 289, in _validate_conn
+    conn.connect()
+  File "/usr/local/lib/python3.6/site-packages/telegram/vendor/ptb_urllib3/urllib3/connection.py", line 284, in connect
+    conn = self._new_conn()
+  File "/usr/local/lib/python3.6/site-packages/telegram/vendor/ptb_urllib3/urllib3/connection.py", line 150, in _new_conn
+    self, "Failed to establish a new connection: %s" % e)
+telegram.vendor.ptb_urllib3.urllib3.exceptions.NewConnectionError: <telegram.vendor.ptb_urllib3.urllib3.connection.VerifiedHTTPSConnection object at 0x7fc8140e5828>: Failed to establish a new connection: [Errno 101] Network is unreachable
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/site-packages/telegram/utils/request.py", line 259, in _request_wrapper
+    resp = self._con_pool.request(*args, **kwargs)
+  File "/usr/local/lib/python3.6/site-packages/telegram/vendor/ptb_urllib3/urllib3/request.py", line 70, in request
+    **urlopen_kw)
+  File "/usr/local/lib/python3.6/site-packages/telegram/vendor/ptb_urllib3/urllib3/request.py", line 148, in request_encode_body
+    return self.urlopen(method, url, **extra_kw)
+  File "/usr/local/lib/python3.6/site-packages/telegram/vendor/ptb_urllib3/urllib3/poolmanager.py", line 244, in urlopen
+    response = conn.urlopen(method, u.request_uri, **kw)
+  File "/usr/local/lib/python3.6/site-packages/telegram/vendor/ptb_urllib3/urllib3/connectionpool.py", line 695, in urlopen
+    **response_kw)
+  File "/usr/local/lib/python3.6/site-packages/telegram/vendor/ptb_urllib3/urllib3/connectionpool.py", line 695, in urlopen
+    **response_kw)
+  File "/usr/local/lib/python3.6/site-packages/telegram/vendor/ptb_urllib3/urllib3/connectionpool.py", line 695, in urlopen
+    **response_kw)
+  File "/usr/local/lib/python3.6/site-packages/telegram/vendor/ptb_urllib3/urllib3/connectionpool.py", line 666, in urlopen
+    _stacktrace=sys.exc_info()[2])
+  File "/usr/local/lib/python3.6/site-packages/telegram/vendor/ptb_urllib3/urllib3/util/retry.py", line 376, in increment
+    raise MaxRetryError(_pool, url, error or ResponseError(cause))
+telegram.vendor.ptb_urllib3.urllib3.exceptions.MaxRetryError: HTTPSConnectionPool(host='api.telegram.org', port=443): Max retries exceeded with url: /bot1816214329:AAHdIJfX_fx16svAh76C5ZCKE6BKIfH-WNw/getUpdates (Caused by NewConnectionError('<telegram.vendor.ptb_urllib3.urllib3.connection.VerifiedHTTPSConnection object at 0x7fc8140e5828>: Failed to establish a new connection: [Errno 101] Network is unreachable',))
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/site-packages/telegram/ext/updater.py", line 646, in _network_loop_retry
+    if not action_cb():
+  File "/usr/local/lib/python3.6/site-packages/telegram/ext/updater.py", line 601, in polling_action_cb
+    allowed_updates=allowed_updates,
+  File "/usr/local/lib/python3.6/site-packages/telegram/ext/extbot.py", line 228, in get_updates
+    api_kwargs=api_kwargs,
+  File "/usr/local/lib/python3.6/site-packages/telegram/bot.py", line 130, in decorator
+    result = func(*args, **kwargs)
+  File "/usr/local/lib/python3.6/site-packages/telegram/bot.py", line 2865, in get_updates
+    api_kwargs=api_kwargs,
+  File "/usr/local/lib/python3.6/site-packages/telegram/bot.py", line 296, in _post
+    f'{self.base_url}/{endpoint}', data=data, timeout=effective_timeout
+  File "/usr/local/lib/python3.6/site-packages/telegram/utils/request.py", line 361, in post
+    **urlopen_kwargs,
+  File "/usr/local/lib/python3.6/site-packages/telegram/utils/request.py", line 265, in _request_wrapper
+    raise NetworkError(f'urllib3 HTTPError {error}') from error
+telegram.error.NetworkError: urllib3 HTTPError HTTPSConnectionPool(host='api.telegram.org', port=443): Max retries exceeded with url: /bot1816214329:AAHdIJfX_fx16svAh76C5ZCKE6BKIfH-WNw/getUpdates (Caused by NewConnectionError('<telegram.vendor.ptb_urllib3.urllib3.connection.VerifiedHTTPSConnection object at 0x7fc8140e5828>: Failed to establish a new connection: [Errno 101] Network is unreachable',))
+Error while getting Updates: urllib3 HTTPError HTTPSConnectionPool(host='api.telegram.org', port=443): Max retries exceeded with url: /bot1816214329:AAHdIJfX_fx16svAh76C5ZCKE6BKIfH-WNw/getUpdates (Caused by NewConnectionError('<telegram.vendor.ptb_urllib3.urllib3.connection.VerifiedHTTPSConnection object at 0x7fc814146a58>: Failed to establish a new connection: [Errno 101] Network is unreachable',))
+No error handlers are registered, logging exception.
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/site-packages/telegram/vendor/ptb_urllib3/urllib3/connection.py", line 141, in _new_conn
+    (self.host, self.port), self.timeout, **extra_kw)
+  File "/usr/local/lib/python3.6/site-packages/telegram/vendor/ptb_urllib3/urllib3/util/connection.py", line 83, in create_connection
+    raise err
+  File "/usr/local/lib/python3.6/site-packages/telegram/vendor/ptb_urllib3/urllib3/util/connection.py", line 73, in create_connection
+    sock.connect(sa)
+OSError: [Errno 101] Network is unreachable
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/site-packages/telegram/vendor/ptb_urllib3/urllib3/connectionpool.py", line 617, in urlopen
+    chunked=chunked)
+  File "/usr/local/lib/python3.6/site-packages/telegram/vendor/ptb_urllib3/urllib3/connectionpool.py", line 360, in _make_request
+    self._validate_conn(conn)
+  File "/usr/local/lib/python3.6/site-packages/telegram/vendor/ptb_urllib3/urllib3/connectionpool.py", line 857, in _validate_conn
+    super(HTTPSConnectionPool, self)._validate_conn(conn)
+  File "/usr/local/lib/python3.6/site-packages/telegram/vendor/ptb_urllib3/urllib3/connectionpool.py", line 289, in _validate_conn
+    conn.connect()
+  File "/usr/local/lib/python3.6/site-packages/telegram/vendor/ptb_urllib3/urllib3/connection.py", line 284, in connect
+    conn = self._new_conn()
+  File "/usr/local/lib/python3.6/site-packages/telegram/vendor/ptb_urllib3/urllib3/connection.py", line 150, in _new_conn
+    self, "Failed to establish a new connection: %s" % e)
+telegram.vendor.ptb_urllib3.urllib3.exceptions.NewConnectionError: <telegram.vendor.ptb_urllib3.urllib3.connection.VerifiedHTTPSConnection object at 0x7fc814146a58>: Failed to establish a new connection: [Errno 101] Network is unreachable
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/site-packages/telegram/utils/request.py", line 259, in _request_wrapper
+    resp = self._con_pool.request(*args, **kwargs)
+  File "/usr/local/lib/python3.6/site-packages/telegram/vendor/ptb_urllib3/urllib3/request.py", line 70, in request
+    **urlopen_kw)
+  File "/usr/local/lib/python3.6/site-packages/telegram/vendor/ptb_urllib3/urllib3/request.py", line 148, in request_encode_body
+    return self.urlopen(method, url, **extra_kw)
+  File "/usr/local/lib/python3.6/site-packages/telegram/vendor/ptb_urllib3/urllib3/poolmanager.py", line 244, in urlopen
+    response = conn.urlopen(method, u.request_uri, **kw)
+  File "/usr/local/lib/python3.6/site-packages/telegram/vendor/ptb_urllib3/urllib3/connectionpool.py", line 695, in urlopen
+    **response_kw)
+  File "/usr/local/lib/python3.6/site-packages/telegram/vendor/ptb_urllib3/urllib3/connectionpool.py", line 695, in urlopen
+    **response_kw)
+  File "/usr/local/lib/python3.6/site-packages/telegram/vendor/ptb_urllib3/urllib3/connectionpool.py", line 695, in urlopen
+    **response_kw)
+  File "/usr/local/lib/python3.6/site-packages/telegram/vendor/ptb_urllib3/urllib3/connectionpool.py", line 666, in urlopen
+    _stacktrace=sys.exc_info()[2])
+  File "/usr/local/lib/python3.6/site-packages/telegram/vendor/ptb_urllib3/urllib3/util/retry.py", line 376, in increment
+    raise MaxRetryError(_pool, url, error or ResponseError(cause))
+telegram.vendor.ptb_urllib3.urllib3.exceptions.MaxRetryError: HTTPSConnectionPool(host='api.telegram.org', port=443): Max retries exceeded with url: /bot1816214329:AAHdIJfX_fx16svAh76C5ZCKE6BKIfH-WNw/getUpdates (Caused by NewConnectionError('<telegram.vendor.ptb_urllib3.urllib3.connection.VerifiedHTTPSConnection object at 0x7fc814146a58>: Failed to establish a new connection: [Errno 101] Network is unreachable',))
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/site-packages/telegram/ext/updater.py", line 646, in _network_loop_retry
+    if not action_cb():
+  File "/usr/local/lib/python3.6/site-packages/telegram/ext/updater.py", line 601, in polling_action_cb
+    allowed_updates=allowed_updates,
+  File "/usr/local/lib/python3.6/site-packages/telegram/ext/extbot.py", line 228, in get_updates
+    api_kwargs=api_kwargs,
+  File "/usr/local/lib/python3.6/site-packages/telegram/bot.py", line 130, in decorator
+    result = func(*args, **kwargs)
+  File "/usr/local/lib/python3.6/site-packages/telegram/bot.py", line 2865, in get_updates
+    api_kwargs=api_kwargs,
+  File "/usr/local/lib/python3.6/site-packages/telegram/bot.py", line 296, in _post
+    f'{self.base_url}/{endpoint}', data=data, timeout=effective_timeout
+  File "/usr/local/lib/python3.6/site-packages/telegram/utils/request.py", line 361, in post
+    **urlopen_kwargs,
+  File "/usr/local/lib/python3.6/site-packages/telegram/utils/request.py", line 265, in _request_wrapper
+    raise NetworkError(f'urllib3 HTTPError {error}') from error
+telegram.error.NetworkError: urllib3 HTTPError HTTPSConnectionPool(host='api.telegram.org', port=443): Max retries exceeded with url: /bot1816214329:AAHdIJfX_fx16svAh76C5ZCKE6BKIfH-WNw/getUpdates (Caused by NewConnectionError('<telegram.vendor.ptb_urllib3.urllib3.connection.VerifiedHTTPSConnection object at 0x7fc814146a58>: Failed to establish a new connection: [Errno 101] Network is unreachable',))
+Error while getting Updates: urllib3 HTTPError HTTPSConnectionPool(host='api.telegram.org', port=443): Max retries exceeded with url: /bot1816214329:AAHdIJfX_fx16svAh76C5ZCKE6BKIfH-WNw/getUpdates (Caused by NewConnectionError('<telegram.vendor.ptb_urllib3.urllib3.connection.VerifiedHTTPSConnection object at 0x7fc814146d68>: Failed to establish a new connection: [Errno 101] Network is unreachable',))
+No error handlers are registered, logging exception.
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/site-packages/telegram/vendor/ptb_urllib3/urllib3/connection.py", line 141, in _new_conn
+    (self.host, self.port), self.timeout, **extra_kw)
+  File "/usr/local/lib/python3.6/site-packages/telegram/vendor/ptb_urllib3/urllib3/util/connection.py", line 83, in create_connection
+    raise err
+  File "/usr/local/lib/python3.6/site-packages/telegram/vendor/ptb_urllib3/urllib3/util/connection.py", line 73, in create_connection
+    sock.connect(sa)
+OSError: [Errno 101] Network is unreachable
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/site-packages/telegram/vendor/ptb_urllib3/urllib3/connectionpool.py", line 617, in urlopen
+    chunked=chunked)
+  File "/usr/local/lib/python3.6/site-packages/telegram/vendor/ptb_urllib3/urllib3/connectionpool.py", line 360, in _make_request
+    self._validate_conn(conn)
+  File "/usr/local/lib/python3.6/site-packages/telegram/vendor/ptb_urllib3/urllib3/connectionpool.py", line 857, in _validate_conn
+    super(HTTPSConnectionPool, self)._validate_conn(conn)
+  File "/usr/local/lib/python3.6/site-packages/telegram/vendor/ptb_urllib3/urllib3/connectionpool.py", line 289, in _validate_conn
+    conn.connect()
+  File "/usr/local/lib/python3.6/site-packages/telegram/vendor/ptb_urllib3/urllib3/connection.py", line 284, in connect
+    conn = self._new_conn()
+  File "/usr/local/lib/python3.6/site-packages/telegram/vendor/ptb_urllib3/urllib3/connection.py", line 150, in _new_conn
+    self, "Failed to establish a new connection: %s" % e)
+telegram.vendor.ptb_urllib3.urllib3.exceptions.NewConnectionError: <telegram.vendor.ptb_urllib3.urllib3.connection.VerifiedHTTPSConnection object at 0x7fc814146d68>: Failed to establish a new connection: [Errno 101] Network is unreachable
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/site-packages/telegram/utils/request.py", line 259, in _request_wrapper
+    resp = self._con_pool.request(*args, **kwargs)
+  File "/usr/local/lib/python3.6/site-packages/telegram/vendor/ptb_urllib3/urllib3/request.py", line 70, in request
+    **urlopen_kw)
+  File "/usr/local/lib/python3.6/site-packages/telegram/vendor/ptb_urllib3/urllib3/request.py", line 148, in request_encode_body
+    return self.urlopen(method, url, **extra_kw)
+  File "/usr/local/lib/python3.6/site-packages/telegram/vendor/ptb_urllib3/urllib3/poolmanager.py", line 244, in urlopen
+    response = conn.urlopen(method, u.request_uri, **kw)
+  File "/usr/local/lib/python3.6/site-packages/telegram/vendor/ptb_urllib3/urllib3/connectionpool.py", line 695, in urlopen
+    **response_kw)
+  File "/usr/local/lib/python3.6/site-packages/telegram/vendor/ptb_urllib3/urllib3/connectionpool.py", line 695, in urlopen
+    **response_kw)
+  File "/usr/local/lib/python3.6/site-packages/telegram/vendor/ptb_urllib3/urllib3/connectionpool.py", line 695, in urlopen
+    **response_kw)
+  File "/usr/local/lib/python3.6/site-packages/telegram/vendor/ptb_urllib3/urllib3/connectionpool.py", line 666, in urlopen
+    _stacktrace=sys.exc_info()[2])
+  File "/usr/local/lib/python3.6/site-packages/telegram/vendor/ptb_urllib3/urllib3/util/retry.py", line 376, in increment
+    raise MaxRetryError(_pool, url, error or ResponseError(cause))
+telegram.vendor.ptb_urllib3.urllib3.exceptions.MaxRetryError: HTTPSConnectionPool(host='api.telegram.org', port=443): Max retries exceeded with url: /bot1816214329:AAHdIJfX_fx16svAh76C5ZCKE6BKIfH-WNw/getUpdates (Caused by NewConnectionError('<telegram.vendor.ptb_urllib3.urllib3.connection.VerifiedHTTPSConnection object at 0x7fc814146d68>: Failed to establish a new connection: [Errno 101] Network is unreachable',))
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/site-packages/telegram/ext/updater.py", line 646, in _network_loop_retry
+    if not action_cb():
+  File "/usr/local/lib/python3.6/site-packages/telegram/ext/updater.py", line 601, in polling_action_cb
+    allowed_updates=allowed_updates,
+  File "/usr/local/lib/python3.6/site-packages/telegram/ext/extbot.py", line 228, in get_updates
+    api_kwargs=api_kwargs,
+  File "/usr/local/lib/python3.6/site-packages/telegram/bot.py", line 130, in decorator
+    result = func(*args, **kwargs)
+  File "/usr/local/lib/python3.6/site-packages/telegram/bot.py", line 2865, in get_updates
+    api_kwargs=api_kwargs,
+  File "/usr/local/lib/python3.6/site-packages/telegram/bot.py", line 296, in _post
+    f'{self.base_url}/{endpoint}', data=data, timeout=effective_timeout
+  File "/usr/local/lib/python3.6/site-packages/telegram/utils/request.py", line 361, in post
+    **urlopen_kwargs,
+  File "/usr/local/lib/python3.6/site-packages/telegram/utils/request.py", line 265, in _request_wrapper
+    raise NetworkError(f'urllib3 HTTPError {error}') from error
+telegram.error.NetworkError: urllib3 HTTPError HTTPSConnectionPool(host='api.telegram.org', port=443): Max retries exceeded with url: /bot1816214329:AAHdIJfX_fx16svAh76C5ZCKE6BKIfH-WNw/getUpdates (Caused by NewConnectionError('<telegram.vendor.ptb_urllib3.urllib3.connection.VerifiedHTTPSConnection object at 0x7fc814146d68>: Failed to establish a new connection: [Errno 101] Network is unreachable',))
+Error while getting Updates: urllib3 HTTPError HTTPSConnectionPool(host='api.telegram.org', port=443): Max retries exceeded with url: /bot1816214329:AAHdIJfX_fx16svAh76C5ZCKE6BKIfH-WNw/getUpdates (Caused by NewConnectionError('<telegram.vendor.ptb_urllib3.urllib3.connection.VerifiedHTTPSConnection object at 0x7fc81c1e1c18>: Failed to establish a new connection: [Errno 101] Network is unreachable',))
+No error handlers are registered, logging exception.
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/site-packages/telegram/vendor/ptb_urllib3/urllib3/connection.py", line 141, in _new_conn
+    (self.host, self.port), self.timeout, **extra_kw)
+  File "/usr/local/lib/python3.6/site-packages/telegram/vendor/ptb_urllib3/urllib3/util/connection.py", line 83, in create_connection
+    raise err
+  File "/usr/local/lib/python3.6/site-packages/telegram/vendor/ptb_urllib3/urllib3/util/connection.py", line 73, in create_connection
+    sock.connect(sa)
+OSError: [Errno 101] Network is unreachable
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/site-packages/telegram/vendor/ptb_urllib3/urllib3/connectionpool.py", line 617, in urlopen
+    chunked=chunked)
+  File "/usr/local/lib/python3.6/site-packages/telegram/vendor/ptb_urllib3/urllib3/connectionpool.py", line 360, in _make_request
+    self._validate_conn(conn)
+  File "/usr/local/lib/python3.6/site-packages/telegram/vendor/ptb_urllib3/urllib3/connectionpool.py", line 857, in _validate_conn
+    super(HTTPSConnectionPool, self)._validate_conn(conn)
+  File "/usr/local/lib/python3.6/site-packages/telegram/vendor/ptb_urllib3/urllib3/connectionpool.py", line 289, in _validate_conn
+    conn.connect()
+  File "/usr/local/lib/python3.6/site-packages/telegram/vendor/ptb_urllib3/urllib3/connection.py", line 284, in connect
+    conn = self._new_conn()
+  File "/usr/local/lib/python3.6/site-packages/telegram/vendor/ptb_urllib3/urllib3/connection.py", line 150, in _new_conn
+    self, "Failed to establish a new connection: %s" % e)
+telegram.vendor.ptb_urllib3.urllib3.exceptions.NewConnectionError: <telegram.vendor.ptb_urllib3.urllib3.connection.VerifiedHTTPSConnection object at 0x7fc81c1e1c18>: Failed to establish a new connection: [Errno 101] Network is unreachable
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/site-packages/telegram/utils/request.py", line 259, in _request_wrapper
+    resp = self._con_pool.request(*args, **kwargs)
+  File "/usr/local/lib/python3.6/site-packages/telegram/vendor/ptb_urllib3/urllib3/request.py", line 70, in request
+    **urlopen_kw)
+  File "/usr/local/lib/python3.6/site-packages/telegram/vendor/ptb_urllib3/urllib3/request.py", line 148, in request_encode_body
+    return self.urlopen(method, url, **extra_kw)
+  File "/usr/local/lib/python3.6/site-packages/telegram/vendor/ptb_urllib3/urllib3/poolmanager.py", line 244, in urlopen
+    response = conn.urlopen(method, u.request_uri, **kw)
+  File "/usr/local/lib/python3.6/site-packages/telegram/vendor/ptb_urllib3/urllib3/connectionpool.py", line 695, in urlopen
+    **response_kw)
+  File "/usr/local/lib/python3.6/site-packages/telegram/vendor/ptb_urllib3/urllib3/connectionpool.py", line 695, in urlopen
+    **response_kw)
+  File "/usr/local/lib/python3.6/site-packages/telegram/vendor/ptb_urllib3/urllib3/connectionpool.py", line 695, in urlopen
+    **response_kw)
+  File "/usr/local/lib/python3.6/site-packages/telegram/vendor/ptb_urllib3/urllib3/connectionpool.py", line 666, in urlopen
+    _stacktrace=sys.exc_info()[2])
+  File "/usr/local/lib/python3.6/site-packages/telegram/vendor/ptb_urllib3/urllib3/util/retry.py", line 376, in increment
+    raise MaxRetryError(_pool, url, error or ResponseError(cause))
+telegram.vendor.ptb_urllib3.urllib3.exceptions.MaxRetryError: HTTPSConnectionPool(host='api.telegram.org', port=443): Max retries exceeded with url: /bot1816214329:AAHdIJfX_fx16svAh76C5ZCKE6BKIfH-WNw/getUpdates (Caused by NewConnectionError('<telegram.vendor.ptb_urllib3.urllib3.connection.VerifiedHTTPSConnection object at 0x7fc81c1e1c18>: Failed to establish a new connection: [Errno 101] Network is unreachable',))
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/site-packages/telegram/ext/updater.py", line 646, in _network_loop_retry
+    if not action_cb():
+  File "/usr/local/lib/python3.6/site-packages/telegram/ext/updater.py", line 601, in polling_action_cb
+    allowed_updates=allowed_updates,
+  File "/usr/local/lib/python3.6/site-packages/telegram/ext/extbot.py", line 228, in get_updates
+    api_kwargs=api_kwargs,
+  File "/usr/local/lib/python3.6/site-packages/telegram/bot.py", line 130, in decorator
+    result = func(*args, **kwargs)
+  File "/usr/local/lib/python3.6/site-packages/telegram/bot.py", line 2865, in get_updates
+    api_kwargs=api_kwargs,
+  File "/usr/local/lib/python3.6/site-packages/telegram/bot.py", line 296, in _post
+    f'{self.base_url}/{endpoint}', data=data, timeout=effective_timeout
+  File "/usr/local/lib/python3.6/site-packages/telegram/utils/request.py", line 361, in post
+    **urlopen_kwargs,
+  File "/usr/local/lib/python3.6/site-packages/telegram/utils/request.py", line 265, in _request_wrapper
+    raise NetworkError(f'urllib3 HTTPError {error}') from error
+telegram.error.NetworkError: urllib3 HTTPError HTTPSConnectionPool(host='api.telegram.org', port=443): Max retries exceeded with url: /bot1816214329:AAHdIJfX_fx16svAh76C5ZCKE6BKIfH-WNw/getUpdates (Caused by NewConnectionError('<telegram.vendor.ptb_urllib3.urllib3.connection.VerifiedHTTPSConnection object at 0x7fc81c1e1c18>: Failed to establish a new connection: [Errno 101] Network is unreachable',))
+Error while getting Updates: urllib3 HTTPError HTTPSConnectionPool(host='api.telegram.org', port=443): Max retries exceeded with url: /bot1816214329:AAHdIJfX_fx16svAh76C5ZCKE6BKIfH-WNw/getUpdates (Caused by NewConnectionError('<telegram.vendor.ptb_urllib3.urllib3.connection.VerifiedHTTPSConnection object at 0x7fc8141466a0>: Failed to establish a new connection: [Errno 101] Network is unreachable',))
+No error handlers are registered, logging exception.
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/site-packages/telegram/vendor/ptb_urllib3/urllib3/connection.py", line 141, in _new_conn
+    (self.host, self.port), self.timeout, **extra_kw)
+  File "/usr/local/lib/python3.6/site-packages/telegram/vendor/ptb_urllib3/urllib3/util/connection.py", line 83, in create_connection
+    raise err
+  File "/usr/local/lib/python3.6/site-packages/telegram/vendor/ptb_urllib3/urllib3/util/connection.py", line 73, in create_connection
+    sock.connect(sa)
+OSError: [Errno 101] Network is unreachable
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/site-packages/telegram/vendor/ptb_urllib3/urllib3/connectionpool.py", line 617, in urlopen
+    chunked=chunked)
+  File "/usr/local/lib/python3.6/site-packages/telegram/vendor/ptb_urllib3/urllib3/connectionpool.py", line 360, in _make_request
+    self._validate_conn(conn)
+  File "/usr/local/lib/python3.6/site-packages/telegram/vendor/ptb_urllib3/urllib3/connectionpool.py", line 857, in _validate_conn
+    super(HTTPSConnectionPool, self)._validate_conn(conn)
+  File "/usr/local/lib/python3.6/site-packages/telegram/vendor/ptb_urllib3/urllib3/connectionpool.py", line 289, in _validate_conn
+    conn.connect()
+  File "/usr/local/lib/python3.6/site-packages/telegram/vendor/ptb_urllib3/urllib3/connection.py", line 284, in connect
+    conn = self._new_conn()
+  File "/usr/local/lib/python3.6/site-packages/telegram/vendor/ptb_urllib3/urllib3/connection.py", line 150, in _new_conn
+    self, "Failed to establish a new connection: %s" % e)
+telegram.vendor.ptb_urllib3.urllib3.exceptions.NewConnectionError: <telegram.vendor.ptb_urllib3.urllib3.connection.VerifiedHTTPSConnection object at 0x7fc8141466a0>: Failed to establish a new connection: [Errno 101] Network is unreachable
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/site-packages/telegram/utils/request.py", line 259, in _request_wrapper
+    resp = self._con_pool.request(*args, **kwargs)
+  File "/usr/local/lib/python3.6/site-packages/telegram/vendor/ptb_urllib3/urllib3/request.py", line 70, in request
+    **urlopen_kw)
+  File "/usr/local/lib/python3.6/site-packages/telegram/vendor/ptb_urllib3/urllib3/request.py", line 148, in request_encode_body
+    return self.urlopen(method, url, **extra_kw)
+  File "/usr/local/lib/python3.6/site-packages/telegram/vendor/ptb_urllib3/urllib3/poolmanager.py", line 244, in urlopen
+    response = conn.urlopen(method, u.request_uri, **kw)
+  File "/usr/local/lib/python3.6/site-packages/telegram/vendor/ptb_urllib3/urllib3/connectionpool.py", line 695, in urlopen
+    **response_kw)
+  File "/usr/local/lib/python3.6/site-packages/telegram/vendor/ptb_urllib3/urllib3/connectionpool.py", line 695, in urlopen
+    **response_kw)
+  File "/usr/local/lib/python3.6/site-packages/telegram/vendor/ptb_urllib3/urllib3/connectionpool.py", line 695, in urlopen
+    **response_kw)
+  File "/usr/local/lib/python3.6/site-packages/telegram/vendor/ptb_urllib3/urllib3/connectionpool.py", line 666, in urlopen
+    _stacktrace=sys.exc_info()[2])
+  File "/usr/local/lib/python3.6/site-packages/telegram/vendor/ptb_urllib3/urllib3/util/retry.py", line 376, in increment
+    raise MaxRetryError(_pool, url, error or ResponseError(cause))
+telegram.vendor.ptb_urllib3.urllib3.exceptions.MaxRetryError: HTTPSConnectionPool(host='api.telegram.org', port=443): Max retries exceeded with url: /bot1816214329:AAHdIJfX_fx16svAh76C5ZCKE6BKIfH-WNw/getUpdates (Caused by NewConnectionError('<telegram.vendor.ptb_urllib3.urllib3.connection.VerifiedHTTPSConnection object at 0x7fc8141466a0>: Failed to establish a new connection: [Errno 101] Network is unreachable',))
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/site-packages/telegram/ext/updater.py", line 646, in _network_loop_retry
+    if not action_cb():
+  File "/usr/local/lib/python3.6/site-packages/telegram/ext/updater.py", line 601, in polling_action_cb
+    allowed_updates=allowed_updates,
+  File "/usr/local/lib/python3.6/site-packages/telegram/ext/extbot.py", line 228, in get_updates
+    api_kwargs=api_kwargs,
+  File "/usr/local/lib/python3.6/site-packages/telegram/bot.py", line 130, in decorator
+    result = func(*args, **kwargs)
+  File "/usr/local/lib/python3.6/site-packages/telegram/bot.py", line 2865, in get_updates
+    api_kwargs=api_kwargs,
+  File "/usr/local/lib/python3.6/site-packages/telegram/bot.py", line 296, in _post
+    f'{self.base_url}/{endpoint}', data=data, timeout=effective_timeout
+  File "/usr/local/lib/python3.6/site-packages/telegram/utils/request.py", line 361, in post
+    **urlopen_kwargs,
+  File "/usr/local/lib/python3.6/site-packages/telegram/utils/request.py", line 265, in _request_wrapper
+    raise NetworkError(f'urllib3 HTTPError {error}') from error
+telegram.error.NetworkError: urllib3 HTTPError HTTPSConnectionPool(host='api.telegram.org', port=443): Max retries exceeded with url: /bot1816214329:AAHdIJfX_fx16svAh76C5ZCKE6BKIfH-WNw/getUpdates (Caused by NewConnectionError('<telegram.vendor.ptb_urllib3.urllib3.connection.VerifiedHTTPSConnection object at 0x7fc8141466a0>: Failed to establish a new connection: [Errno 101] Network is unreachable',))
+Error while getting Updates: Bad Gateway
+No error handlers are registered, logging exception.
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/site-packages/telegram/ext/updater.py", line 646, in _network_loop_retry
+    if not action_cb():
+  File "/usr/local/lib/python3.6/site-packages/telegram/ext/updater.py", line 601, in polling_action_cb
+    allowed_updates=allowed_updates,
+  File "/usr/local/lib/python3.6/site-packages/telegram/ext/extbot.py", line 228, in get_updates
+    api_kwargs=api_kwargs,
+  File "/usr/local/lib/python3.6/site-packages/telegram/bot.py", line 130, in decorator
+    result = func(*args, **kwargs)
+  File "/usr/local/lib/python3.6/site-packages/telegram/bot.py", line 2865, in get_updates
+    api_kwargs=api_kwargs,
+  File "/usr/local/lib/python3.6/site-packages/telegram/bot.py", line 296, in _post
+    f'{self.base_url}/{endpoint}', data=data, timeout=effective_timeout
+  File "/usr/local/lib/python3.6/site-packages/telegram/utils/request.py", line 361, in post
+    **urlopen_kwargs,
+  File "/usr/local/lib/python3.6/site-packages/telegram/utils/request.py", line 290, in _request_wrapper
+    raise NetworkError('Bad Gateway')
+telegram.error.NetworkError: Bad Gateway
+Error while getting Updates: Bad Gateway
+No error handlers are registered, logging exception.
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/site-packages/telegram/ext/updater.py", line 646, in _network_loop_retry
+    if not action_cb():
+  File "/usr/local/lib/python3.6/site-packages/telegram/ext/updater.py", line 601, in polling_action_cb
+    allowed_updates=allowed_updates,
+  File "/usr/local/lib/python3.6/site-packages/telegram/ext/extbot.py", line 228, in get_updates
+    api_kwargs=api_kwargs,
+  File "/usr/local/lib/python3.6/site-packages/telegram/bot.py", line 130, in decorator
+    result = func(*args, **kwargs)
+  File "/usr/local/lib/python3.6/site-packages/telegram/bot.py", line 2865, in get_updates
+    api_kwargs=api_kwargs,
+  File "/usr/local/lib/python3.6/site-packages/telegram/bot.py", line 296, in _post
+    f'{self.base_url}/{endpoint}', data=data, timeout=effective_timeout
+  File "/usr/local/lib/python3.6/site-packages/telegram/utils/request.py", line 361, in post
+    **urlopen_kwargs,
+  File "/usr/local/lib/python3.6/site-packages/telegram/utils/request.py", line 290, in _request_wrapper
+    raise NetworkError('Bad Gateway')
+telegram.error.NetworkError: Bad Gateway
+Error while getting Updates: Bad Gateway
+No error handlers are registered, logging exception.
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/site-packages/telegram/ext/updater.py", line 646, in _network_loop_retry
+    if not action_cb():
+  File "/usr/local/lib/python3.6/site-packages/telegram/ext/updater.py", line 601, in polling_action_cb
+    allowed_updates=allowed_updates,
+  File "/usr/local/lib/python3.6/site-packages/telegram/ext/extbot.py", line 228, in get_updates
+    api_kwargs=api_kwargs,
+  File "/usr/local/lib/python3.6/site-packages/telegram/bot.py", line 130, in decorator
+    result = func(*args, **kwargs)
+  File "/usr/local/lib/python3.6/site-packages/telegram/bot.py", line 2865, in get_updates
+    api_kwargs=api_kwargs,
+  File "/usr/local/lib/python3.6/site-packages/telegram/bot.py", line 296, in _post
+    f'{self.base_url}/{endpoint}', data=data, timeout=effective_timeout
+  File "/usr/local/lib/python3.6/site-packages/telegram/utils/request.py", line 361, in post
+    **urlopen_kwargs,
+  File "/usr/local/lib/python3.6/site-packages/telegram/utils/request.py", line 290, in _request_wrapper
+    raise NetworkError('Bad Gateway')
+telegram.error.NetworkError: Bad Gateway
+Error while getting Updates: Bad Gateway
+No error handlers are registered, logging exception.
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/site-packages/telegram/ext/updater.py", line 646, in _network_loop_retry
+    if not action_cb():
+  File "/usr/local/lib/python3.6/site-packages/telegram/ext/updater.py", line 601, in polling_action_cb
+    allowed_updates=allowed_updates,
+  File "/usr/local/lib/python3.6/site-packages/telegram/ext/extbot.py", line 228, in get_updates
+    api_kwargs=api_kwargs,
+  File "/usr/local/lib/python3.6/site-packages/telegram/bot.py", line 130, in decorator
+    result = func(*args, **kwargs)
+  File "/usr/local/lib/python3.6/site-packages/telegram/bot.py", line 2865, in get_updates
+    api_kwargs=api_kwargs,
+  File "/usr/local/lib/python3.6/site-packages/telegram/bot.py", line 296, in _post
+    f'{self.base_url}/{endpoint}', data=data, timeout=effective_timeout
+  File "/usr/local/lib/python3.6/site-packages/telegram/utils/request.py", line 361, in post
+    **urlopen_kwargs,
+  File "/usr/local/lib/python3.6/site-packages/telegram/utils/request.py", line 290, in _request_wrapper
+    raise NetworkError('Bad Gateway')
+telegram.error.NetworkError: Bad Gateway
