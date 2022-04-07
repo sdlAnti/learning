@@ -222,3 +222,16 @@ System clock synchronized: yes
 ```
 timedatectl set-timezone Europe/Moscow
 ```
+> Установыить дату и время
+```
+timedatectl set-time "2020-04-01 12:00:00"
+```
+> Выключить NTP 
+```
+timedatectl set-ntp false
+```
+> Вывести орпделенную дату
+```
+date --date='TZ="Europe/Moscow" 00:00 2019-12-01'
+```
+Можно использовать переменную окружения *TZ* с которой будет работать date - export TZ=":/usr/share/zoneinfo/Europe/Moscow"
