@@ -234,4 +234,63 @@ timedatectl set-ntp false
 ```
 date --date='TZ="Europe/Moscow" 00:00 2019-12-01'
 ```
-Можно использовать переменную окружения *TZ* с которой будет работать date - export TZ=":/usr/share/zoneinfo/Europe/Moscow"
+Можно использовать переменную окружения *TZ* с которой будет работать date - export TZ=":/usr/share/zoneinfo/Europe/Moscow"  
+# ifconfig (net-tools) / ip (iproute2)
+Инструмент командной строки для диагностика и настрйки сетевых интерфейсов  
+[Cheat file](https://access.redhat.com/sites/default/files/attachments/rh_ip_command_cheatsheet_1214_jcs_print.pdf)
+| NET-TOOLS COMMANDS                                        | IPROUTE COMMANDS                                     |
+| :-------------------------------------------------------- | :--------------------------------------------------- |
+| arp -a                                                    | ip neigh                                             |
+| arp -v                                                    | ip -s neigh                                          |
+| arp -s 192.168.1.1 1:2:3:4:5:6                            | ip neigh add 192.168.1.1 lladdr 1:2:3:4:5:6 dev eth1 |
+| arp -i eth1 -d 192.168.1.1                                | ip neigh del 192.168.1.1 dev eth1                    |
+| ifconfig -a                                               | ip addr                                              |
+| ifconfig eth0 down                                        | ip link set eth0 down                                |
+| ifconfig eth0 up                                          | ip link set eth0 up                                  |
+| ifconfig eth0 192.168.1.1                                 | ip addr add 192.168.1.1/24 dev eth0                  |
+| ifconfig eth0 netmask 255.255.255.0                       | ip addr add 192.168.1.1/24 dev eth0                  |
+| ifconfig eth0 mtu 9000                                    | ip link set eth0 mtu 9000                            |
+| ifconfig eth0:0 192.168.1.2                               | ip addr add 192.168.1.2/24 dev eth0                  |
+| netstat                                                   | ss                                                   |
+| netstat -neopa                                            | ss -neopa                                            |
+| netstat -g                                                | ip maddr                                             |
+| route                                                     | ip route                                             |
+| route add -net 192.168.1.0 netmask 255.255.255.0 dev eth0 | ip route add 192.168.1.0/24 dev eth0                 |
+| route add default gw 192.168.1.1                          | ip route add default via 192.168.1.1                 |
+## Пример использования
+> Получение базовой информации по интерфейсам
+```
+ip addr
+```
+> Получение базовой информации по определенному интерфейсу
+```
+ip addr show rbr0
+```
+> Задать основной ip интерфейса
+```
+ifconfig eth0 192.168.1.1
+```
+> Задать маску подсети
+```
+ifconfig eth0 netmask 255.255.255.0  
+```
+> Добавить дополнительный IPv4-адрес на основной интерфейс из той же подсети.
+```
+ifconfig eth0:0 192.168.124.190
+```
+> Создать интерфейс с именем dum0 и типом dummy
+```
+ip link add dum0 type dummy
+```
+> Включить интерфейс dum0
+```
+ip link set dum0 up
+```
+> Задать основной Ip интерфейса
+```
+ip addr add 192.168.1.20/24 dev dum0
+```
+> Задать MTU для интерфейса
+```
+ip link set dum0 mtu 1462
+```
