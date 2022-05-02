@@ -382,5 +382,164 @@ ss -4a state connected
 ```
 > Показать все прослушивающие TCP и UDP порты с выводом номера процесса и IP-адреса (не имени);
 ```
-ss -tuln
+ss -tulnp
+```
+# iptables
+Файрвол, брандмауэр или межсетевой экран  
+```
+iptables -L
+Chain INPUT (policy ACCEPT)
+target     prot opt source               destination
+
+Chain FORWARD (policy DROP)
+target     prot opt source               destination
+DOCKER-USER  all  --  anywhere             anywhere
+DOCKER-ISOLATION-STAGE-1  all  --  anywhere             anywhere
+ACCEPT     all  --  anywhere             anywhere             ctstate RELATED,ESTABLISHED
+DOCKER     all  --  anywhere             anywhere
+ACCEPT     all  --  anywhere             anywhere
+ACCEPT     all  --  anywhere             anywhere
+
+Chain OUTPUT (policy ACCEPT)
+target     prot opt source               destination
+```
+[## Примеры использования](https://www.digitalocean.com/community/tutorials/iptables-essentials-common-firewall-rules-and-commands)
+> получить список текущих правил с нумерацией
+```
+iptables -L --line-numbers
+```
+> Разрешить уже установленныe и связанныe входящие соединения  
+```
+iptables -A INPUT -m conntrack --ctstate ESTABLISHED,RELATED -j ACCEPT
+```
+**-A INPUT** — эта часть команды, которая сообщает iptables, что мы хотим добавить новое правило в конец цепочки INPUT.  
+**-m conntrack** — iptables имеет набор основных функциональных возможностей, но также имеет набор расширений или модулей, которые предоставляют дополнительные возможности. И в этой части команды мы говорим, что хотим иметь доступ к функциональности, предоставляемой модулем conntrack. Этот модуль предоставляет доступ к командам, которые могут использоваться для принятия решений на основе отношения пакета к предыдущим соединениям.  
+**–ctstate** — это одна из команд, доступных при вызове модуля conntrack, которая позволяет нам сопоставлять пакеты в зависимости от того, как они связаны с пакетами, которые мы видели ранее. Мы передаем ему значение ESTABLISHED, чтобы разрешить пакеты, являющиеся частью существующего соединения. А также передаем значение RELATED, чтобы разрешить пакеты, которые связаны с установленным соединением.  
+**-j ACCEPT** — указывает цель сопоставления пакетов, то есть тут мы говорим, что пакеты, которые соответствуют предыдущим критериям, должны быть приняты и пропущены.
+
+> Разрешить подключения на 22 порт
+```
+iptables -A INPUT -p tcp --dport 22 -j ACCEPT
+```
+> Разрешить подключения на 22 порт с определенного источника 
+```
+iptables -A INPUT -p tcp -s 203.0.113.0/24 --dport 22 -m conntrack --ctstate NEW,ESTABLISHED -j ACCEPT
+```
+**-p tcp** — эта опция указывает на пакеты TCP-протокола.  
+**–dport** — данная опция доступна только, если задана предыдущая -p tcp, и указывает на то, что TCP-пакет должен соответствовать порту назначения, в нашем случае - 22 порт.
+
+> Разрешить все пакеты на сетевом интерфейсе lo (если пакет использует интерфейс lo, то любой пакет использующий lo должен быть разрешен )
+```
+iptables -I INPUT 1 -i lo -j ACCEPT
+```
+-I INPUT 1 — правило необходимо вставить в цепочку INPUT, первой строкой.
+-i lo — укзывает интерфейс
+> Изменить политику по уполчанию (`Chain INPUT (policy ACCEPT)`) на DROP
+```
+iptables -P INPUT DROP
+```
+> Добавить запрещающее правило
+Как правило добавляется в конец цепочки после разрешающих, если политика по умолчанию - ACCEPT
+```
+iptables -A INPUT -j DROP
+```
+> Заблокировать сетевые подключения с 203.0.113.51
+```
+iptables -A INPUT -s 203.0.113.51 -j DROP
+```
+> Отклонить сетевые подключения с 203.0.113.51
+Может использоваться с флагом --reject-with причина отклонения  
+- icmp-net-unreachable — сеть недоступна;
+- icmp-host-unreachable — узел недоступен;
+- icmp-port-unreachable — порт недоступен;
+- icmp-proto-unreahable — неподдерживаемый протокол;
+- icmp-net-prohibited — сеть запрещена;
+- icmp-host-prohibited — узел запрещен;
+- tcp-reset - отправляет RST- сообщения отправителю. TCP RST пакеты используются для закрытия TCP соединений.
+```
+iptables -A INPUT -s 203.0.113.51 -j REJECT
+iptables -A INPUT -s 203.0.113.51 -j REJECT --reject-with icmp-port-unreachable
+iptables -A INPUT -s 203.0.113.51 -p tcp -j REJECT --reject-with tcp-reset 
+iptables -A INPUT -p udp -j REJECT --reject-with icmp-port-unreachable
+```
+> 
+# ufw
+По своей сути пакет ufw, является просто надстройкой над iptables, но более прост в управлении и конфигурировании.
+```
+ufw status verbose
+Status: active
+Logging: on (low)
+Default: deny (incoming), allow (outgoing), deny (routed)
+New profiles: skip
+
+To                         Action      From
+--                         ------      ----
+80,443/tcp (Nginx Full)    ALLOW IN    Anywhere                   # web server
+80,443/tcp (Nginx Full (v6)) ALLOW IN    Anywhere (v6)              # web server
+```
+## Примеры использования.
+> Включение.отключение
+```
+ufw enable
+ufw disable
+```
+> Сброс правил
+```
+ufw reset
+```
+> Политика по умолчанию входящих соединений — запрещено, исходящих - разрешено.
+Иначе работает правило как для iptables - "сверху разрешили что нужно, а снизу запретили все"
+```
+ufw default allow outgoing
+ufw default deny incoming
+```
+> Получить список приложений 
+```
+ufw app list
+Available applications:
+  CUPS
+  Nginx Full
+  Nginx HTTP
+  Nginx HTTPS
+  OpenSSH
+  Postfix
+  Postfix SMTPS
+```
+> Разрешить доступ используя имя приложения с комментарием
+```
+ufw allow 'Nginx Full' comment 'web server'
+```
+> Разрешить доступ используя порт и протокол
+```
+ufw allow 22/tcp
+```
+> Разрешить все с 9.9.9.9
+```
+ufw allow from 9.9.9.9
+```
+> Разрешить все с 9.9.9.9 только на порт 3306
+```
+ufw allow from 9.9.9.9 to any port 3306
+```
+> Разрешить доступ только для IP 9.9.9.9, по протоколу tcp на порт 3306, только на входящий интерфейс и его IP-адрес.
+```
+ufw allow in on ens33 from 9.9.9.9 to 192.168.124.157 port 3306 proto tcp comment MySQL
+```
+> Разрешить несколько портов tcp
+```
+ufw allow 15000:15017/tcp
+```
+> Запретить все подключения с 9.9.9.9
+```
+ufw deny from 9.9.9.9
+```
+> Список правил с нумерацией и правлиами по умолчанию
+```
+ufw status numbered verbose
+```
+> Удалить правило № 3 или http или 80
+```
+ufw delete 3
+ufw delete allow http
+ufw delete allow 80
 ```
