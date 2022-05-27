@@ -543,3 +543,77 @@ ufw delete 3
 ufw delete allow http
 ufw delete allow 80
 ```
+# journalctl
+Инструмент для анализа логов поставляемый вместе с systemd
+```
+$ journalctl
+Oct 28 18:56:00 ubuntu kernel: KERNEL supported cpus:
+Oct 28 18:56:00 ubuntu kernel:   Intel GenuineIntel
+Oct 28 18:56:00 ubuntu kernel:   AMD AuthenticAMD
+Oct 28 18:56:00 ubuntu kernel:   Hygon HygonGenuine
+Oct 28 18:56:00 ubuntu kernel:   Centaur CentaurHauls
+Oct 28 18:56:00 ubuntu kernel:   zhaoxin   Shanghai
+Oct 28 18:56:00 ubuntu kernel: x86/fpu: Supporting XSAVE feature 0x001: 'x87 floating point registers'
+Oct 28 18:56:00 ubuntu kernel: x86/fpu: Supporting XSAVE feature 0x002: 'SSE registers'
+Oct 28 18:56:00 ubuntu kernel: x86/fpu: Supporting XSAVE feature 0x004: 'AVX registers'
+Oct 28 18:56:00 ubuntu kernel: x86/fpu: xstate_offset[2]:  576, xstate_sizes[2]:  256
+Oct 28 18:56:00 ubuntu kernel: x86/fpu: Enabled xstate features 0x7, context size is 832 bytes, using 'compacted' format.
+```
+## Примеры использования.  
+> Вывести все записи из всех журналов
+```
+journalctl
+```
+> Вывести все записи из всех журналов во времени UTC
+```
+journalctl --utc
+```
+> Просмотр ошибок по уровню важности
+  
+Доступны другие уровни важности, *journalctl выведет все сообщения с этим кодом и выше*
+
+0. emergency (неработоспособность системы)
+1. alerts (предупреждения, требующие немедленного вмешательства)
+2. critical (критическое состояние)
+3. errors (ошибки)
+4. warning (предупреждения)
+5. notice (уведомления)
+6. info (информационные сообщения)
+7. debug (отладочные сообщения)
+
+```
+journalctl -p 2
+```
+> Просмотр всех журналов загрузки  
+```
+journalctl --list-boots
+```
+Для просмотра определенного журнала используется ключ -b и идентификатор журнала из --list-boots
+```
+journalctl -b 0
+```
+> Просмотр журнала за определенный период времени  
+С определенной даты и времени:
+```
+journalctl --since "2022-04-26 02:00:00"
+```
+С определенной даты и по определенное дату и время:
+```
+journalctl --since "2022-04-26 02:00:00" --until "2022-04-27 05:00:00"
+```
+Со вчерашнего дня:
+```
+journalctl --since yesterday
+```
+С 9 утра и до момента, час назад:
+```
+journalctl --since 09:00 --until "1 hour ago"
+```
+> Просмотр сообщений ядра
+```
+journalctl -k
+```
+> Просмотр журналов определенного сервиса
+```
+
+```
